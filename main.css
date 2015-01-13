@@ -1,1 +1,50 @@
 /* ADD YOUR STYLES HERE */
+
+.center-horiz {
+	text-align: center;
+}
+
+.center-horiz img {
+	display: inline-block;
+	margin: 20px;
+}
+/* property that affects all children excluding <ol> */
+.in-line img, .in-line p, .in-line ol {
+
+	text-align: center;
+	display: inline-block;
+	vertical-align: text-top;
+	margin: 20px;
+}
+
+.vertical-container {
+	text-align: left;
+}
+.vertical-contents {
+	display: inline-block;
+	padding: 100px 0px 100px 0px;
+}
+
+ul.condensed, ul.condensed li {
+	display: inline;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+/*compensating for margin separating list items */
+ul.condensed li {
+	margin: -1px;
+}
+
+a {
+	text-align: center;
+	background: #ed818a;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+}
+
+a.buy {
+	font-size: 1.5em;
+	padding: 50px;
+}
