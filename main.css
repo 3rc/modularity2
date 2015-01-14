@@ -28,7 +28,6 @@
 ul.condensed, ul.condensed li {
 	display: inline;
 	list-style: none;
-	margin: 0px;
 	padding: 0px;
 }
 /*compensating for margin separating list items */
@@ -36,15 +35,122 @@ ul.condensed li {
 	margin: -1px;
 }
 
-a {
+a.buy, a.learn, a.ok, .nav, .nav a, input, button {
+	display: inline-block;
 	text-align: center;
 	background: #ed818a;
 	border-radius: 5px;
 	color: white;
 	text-decoration: none;
+	margin: 0px;
 }
 
 a.buy {
 	font-size: 1.5em;
-	padding: 50px;
+	padding: 20px 50px 20px 50px;
 }
+
+a.learn, input {
+	padding: 10px 25px 10px 25px;
+	border-style: none;
+}
+
+a.ok {
+	padding: 5px 10px 5px 10px;
+	font-size: 0.8em;
+}
+
+ul.nav li {
+	display: inline-block;
+	padding: 10px 50px 10px 25px;
+	text-align: center;
+}
+
+ul.nav li:hover {
+    -webkit-filter: invert(100%);
+}
+
+.pages li {
+	display: inline-block;
+	padding: 5px;
+	margin: 5px;
+}
+.pages li.pgNum {
+	border-bottom: solid 3px;
+	color: #ed818a;
+}
+
+.pages li.active {
+	border-bottom: solid 3px;
+	color: gray;
+
+}
+.pages li a {
+	text-decoration: none;
+	color: #ed818a;
+}
+
+.comment {
+	overflow: auto;
+	margin: 1em;
+	display: block;
+}
+
+.comment img {
+	float:left;
+	margin-right: 1em;
+}
+
+.reply {
+	overflow: auto;
+	margin: 1em 1em 1em 100px;
+}
+
+time {
+	font-size: .8em;
+	font-weight: oblique;
+	color: #BCBCBE;
+}
+
+ul.tabs {
+	padding-left: 5px;
+	margin: 10px 0 0 0;
+}
+
+.tabs li, .tabs div, .tabs a {
+	font-weight: bold;
+	text-decoration: none;
+	list-style: none;
+	display: inline;
+	position: relative;
+	border-radius: 4px 4px 0 0;
+	z-index: 1;
+}
+
+.tabs li {
+	margin: 5px;
+	border: solid 1px black;
+	padding: 5px 0 5px 0;
+}
+
+.tabs div {
+	padding: 5px;
+}
+
+.tabs a {
+	padding: 5px;
+}
+
+.tabs .active {
+	border-bottom: solid white 1px;
+
+}
+
+.tabContent {
+	margin-top: 5px;
+	border: solid 1px black;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+
